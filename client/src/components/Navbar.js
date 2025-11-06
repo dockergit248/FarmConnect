@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import LanguageSwitcher from './LanguageSwitcher'
 
 const Navbar = () => {
     const navigate = useNavigate()
@@ -20,7 +21,8 @@ const Navbar = () => {
             <a href='#footer' className='list'>Contact Us</a>
         </div>
 
-        <div className='login'>
+        <div className='login' style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+            <LanguageSwitcher />
             <button className='lgbtn' onClick={handleClickLogin}>Login</button>
         </div>
         

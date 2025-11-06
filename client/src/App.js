@@ -11,6 +11,7 @@ import MarketPrices from './components/MarketPrices';
 import Learning from './components/Learning';
 import Resources from './components/Resources';
 import Home from './components/Home';
+import Chatbot from './components/Chatbot';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -88,6 +89,7 @@ function App() {
             element={user ? <Navigate to="/dashboard" /> : <Navigate to="/login" />}
           />
         </Routes>
+        <Chatbot />
       </div>
     </Router>
   );
